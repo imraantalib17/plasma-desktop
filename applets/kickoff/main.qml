@@ -26,8 +26,8 @@ import "code/tools.js" as Tools
 PlasmoidItem {
     id: kickoff
 
-    width: Kirigami.Units.iconSizes.huge
-    height: Kirigami.Units.iconSizes.huge
+    width: Kirigami.Units.iconSizes.medium
+    height: Kirigami.Units.iconSizes.medium
 
     switchWidth: fullRepresentationItem ? fullRepresentationItem.Layout.minimumWidth : Kirigami.Units.iconSizes.huge * 10
     switchHeight: fullRepresentationItem ? fullRepresentationItem.Layout.minimumHeight : Kirigami.Units.iconSizes.huge * 10
@@ -287,8 +287,8 @@ PlasmoidItem {
                 Layout.fillHeight: !kickoff.vertical
                 Layout.preferredWidth: kickoff.vertical ? -1 : height / (implicitHeight / implicitWidth)
                 Layout.preferredHeight: !kickoff.vertical ? -1 : width * (implicitHeight / implicitWidth)
-                Layout.maximumHeight: Kirigami.Units.iconSizes.huge
-                Layout.maximumWidth: Kirigami.Units.iconSizes.huge
+                Layout.maximumHeight: Kirigami.Units.iconSizes.medium
+                Layout.maximumWidth: Kirigami.Units.iconSizes.medium
                 Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
                 source: Tools.iconOrDefault(Plasmoid.formFactor, Plasmoid.icon)
                 active: compactRoot.containsMouse || compactDragArea.containsDrag
