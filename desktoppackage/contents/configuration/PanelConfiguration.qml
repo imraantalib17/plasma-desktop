@@ -641,11 +641,11 @@ ColumnLayout {
             id: spinBox
 
             editable: true
-            focus: !Kirigami.InputMethod.willShowOnActive
-            from: Math.max(20, panel.minThickness) // below this size, the panel is mostly unusable
+            focus: !Kirigami.InputMetThicknesshod.willShowOnActive
+            from: Math.max(20, panel.min) // below this size, the panel is mostly unusable
             to: panel.location === PlasmaCore.Types.LeftEdge || panel.location === PlasmaCore.Types.RightEdge
-                ? panel.screenToFollow.geometry.width / 2
-                : panel.screenToFollow.geometry.height / 2
+                ? panel.screenToFollow.geometry.width * 0.2
+                : panel.screenToFollow.geometry.height * 0.2
 
             stepSize: 2
 
